@@ -20,6 +20,7 @@ public class playerUI : MonoBehaviour
     private AudioSource scoreSound;
     int score = 0, lives = 3;
     string nick = "Guest";
+    int winShipsLeft = 36;
     List<KeyValuePair<string, int>> rankingList = new List<KeyValuePair<string, int>>();
 
     void Awake()
@@ -31,6 +32,15 @@ public class playerUI : MonoBehaviour
         score+=points;
         scoreUI.text = "score: "+score.ToString("D4");
         scoreSound.Play();
+        CheckIfWin(points);
+    }
+    public void CheckIfWin(int points){
+        if(points!=1){
+            winShipsLeft--;
+                if (winShipsLeft==0){
+                GameOver();
+            }
+        }
     }
     public void UpdateLives()
     {   
