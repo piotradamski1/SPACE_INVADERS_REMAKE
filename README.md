@@ -1,5 +1,6 @@
 ﻿# SPACE_INVADERS_REMAKE
 <b>Strzelanka w której gracz poruszający się choryzontalnie ostrzeliwuje przeciwne statki kosmiczne</b> </br>
+Technologie: Unity3D, C# </br>
 W projekcie użyte zostały assety "Simple Spaceships" by 3dJeebs </br></br>
 <b>Minimalistyczne menu:</b> </br>
 ![unity4](https://user-images.githubusercontent.com/122048598/215196156-d410ab25-5745-43aa-8177-19705cd736d9.png)</br></br>
